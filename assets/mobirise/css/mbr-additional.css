@@ -926,13 +926,14 @@ body {
 .cid-rAEZXswCKV .mbr-text,
 .cid-rAEZXswCKV .mbr-section-btn {
   color: #000000;
+  text-align: left;
 }
 .cid-rAEZXswCKV .mbr-title {
   color: #365c9a;
 }
 .cid-rsyMao6nmU {
-  padding-top: 15px;
-  padding-bottom: 30px;
+  padding-top: 0px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
 .cid-rsyMao6nmU .mbr-section-subtitle {
