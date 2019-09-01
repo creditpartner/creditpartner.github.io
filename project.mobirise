@@ -41,7 +41,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.1",
     "siteFonts": [],
-    "uniqCompNum": 94,
+    "uniqCompNum": 96,
     "versionPublish": "4.10.8",
     "screenshot": "screenshot.png",
     "favicon": "",
@@ -3202,6 +3202,116 @@
           "_anchor": "formbuilder-2l",
           "_protectedParams": [],
           "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "blockquote": {
+              "border-width": "1px",
+              "border-color": "@blockquoteColor",
+              "padding": "0 0 0 20px"
+            },
+            ".mbr-text, .blockquote-quote": {
+              "color": "#879a9f"
+            },
+            "footer": {
+              "font-style": "normal"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section article\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Show Signature\" name=\"showSignature\" checked>\n        <input type=\"color\" name=\"blockquoteColor\" title=\"Blockquote Color\" value=\"#879a9f\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-10 col-lg-8\">\n                <blockquote>\n                    <p class=\"mbr-text mbr-fonts-style pb-1\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .blockquote-quote\" mbr-article>Please provide the following documents ***\n<br>Color Copy of DL or state ID\n<br>Color copy of SSC\n<br>Most recent Utility Bill</p>\n                    <footer class=\"mbr-fonts-style align-left mbr-bold\" mbr-theme-style=\"display-4\" data-app-selector=\"footer\" mbr-article mbr-if=\"showSignature\">— Incorporation Station Group\n<div><br></div></footer>\n                </blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rARAP5PFyv",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content6-2m"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".social-media": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "flex-end",
+              "justify-content": "flex-end",
+              "padding-right": "4rem",
+              "ul": {
+                "margin": "0",
+                "padding": "0",
+                "margin-bottom": "8px",
+                "li": {
+                  "padding": "4px",
+                  "display": "inline-block"
+                }
+              }
+            },
+            ".logo-section": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "flex-start",
+              "justify-content": "flex-start",
+              "padding-left": "4rem"
+            },
+            ".icon-transition span": {
+              "color": "rgb(255, 255, 255)",
+              "display": "block",
+              "padding": "0.1rem 0.8rem",
+              "height": "3em",
+              "line-height": "3em",
+              "border-radius": "50%",
+              "background-color": "@circleColor",
+              "width": "3em",
+              "-webkit-transition": "all 0.3s ease-out 0s",
+              "transition": "all 0.3s ease-out 0s",
+              "font-size": "13px"
+            },
+            ".icon-transition span:hover": {
+              "background-color": "@circleColor2"
+            },
+            ".mbr-text": {
+              "color": "#9c88bc"
+            },
+            "@media (max-width: 991px)": {
+              ".social-media": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "padding-right": "0rem"
+              },
+              ".logo-section": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "padding-left": "0rem",
+                "margin-bottom": "1.5rem"
+              },
+              ".mbr-text": {
+                "margin-bottom": "1.5rem"
+              }
+            }
+          },
+          "_name": "footer2",
+          "_customHTML": "<section group=\"Footers\" global=\"\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n        <input type=\"range\" title=\"Logo Size\" inline=\"\" name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked=\"\">\n        <select title=\"Icons Count\" name=\"iconsCount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected=\"\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n        </select>\n        <input type=\"color\" title=\"Circle Color\" name=\"circleColor\" value=\"#66458e\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Circle on Hover\" name=\"circleColor2\" value=\"#e96188\" condition=\"showIcons\">\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/03.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row align-center justify-content-center align-items-center\">\n            <div class=\"logo-section col-sm-12 col-lg-4\" mbr-if=\"showLogo\">\n                <a href=\"#\"><img src=\"@PROJECT_PATH@/assets/images/hql-badge275-156x122.png\" height=\"128\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title=\"\">\n                </a>\n            </div>\n            <div class=\"col-sm-12 col-lg-4 mbr-text mbr-fonts-style mbr-light\" mbr-text=\"\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\"><b>Incorporation Station &nbsp;| &nbsp;<a href=\"tel:+1-865-245-5705\"><b>865-245-5705</b></a></b></div>\n            <div class=\"social-media col-sm-12 col-lg-4\" mbr-if=\"showIcons\">\n                <ul>\n                    <li mbr-if=\"iconsCount > 0\">\n                      <a class=\"icon-transition\" href=\"mailto:cfo@moneygetsystem.com\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont icon54-v2-email-app-2\"></span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 1\">\n                      <a class=\"icon-transition\" href=\"tel:+1-865-245-5705\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont icon54-v4-phone\"></span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 2\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-linkedin socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 3\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-youtube socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 4\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-rss socicon\" style=\"\"></span>\n                      </a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "footer2-2n",
+          "_isUserblock": true,
+          "_sourceTheme": "commercem4",
+          "_cid": "rARBuWHZKe",
+          "_protectedParams": [],
+          "_global": true,
           "_once": false,
           "_params": {}
         }
