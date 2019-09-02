@@ -2645,8 +2645,9 @@
     },
     "page2.html": {
       "settings": {
-        "title": "application",
-        "order": 1
+        "title": "CP Application",
+        "order": 1,
+        "meta_descr": "Credit Partner Application"
       },
       "components": [
         {
